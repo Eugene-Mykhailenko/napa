@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<?
+	if ($_SERVER["HTTPS"]=="on")
+	{
+		$http = "https";
+	}
+	else
+	{
+		$http = "http";
+	}
+	session_start();
+		unset($_SESSION['number']);
+?>
+
+	<title><?=$title;?></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	<?=$description?>
+	<?=$keywords?>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/css/styles.css" type="text/css" media="all" />
+		
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-20415236-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+(function(a,e,c,f,g,b,d){var h={ak:"928708943",cl:"QwDFCPazp2YQz_LrugM"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[f]||(a[f]=h.ak);b=e.createElement(g);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(g)[0];d.parentNode.insertBefore(b,d);a._googWcmGet=function(b,d,e){a[c](2,b,h,d,null,new Date,e)}})(window,document,"_googWcmImpl","_googWcmAk","script");
+</script>
+	<script type="text/javascript" src="/js/noerror.js?=2"></script>
+	<script type="text/javascript" src="/js/mootools.core.js?=2"></script>
+	<script type="text/javascript" src="/js/mootools.more.js?=2"></script>
+	<link rel="stylesheet" type="text/css" href="/css/calendar.css" media="all" />
+	<script type="text/javascript" src="/js/menu.js?=2"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?=2"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&libraries=places&language=en-AU"></script>
+	<script type="text/javascript" src="/js/jquery.maskedinput.js?=2"></script>
+	<script type="text/javascript" src="/js/jquery.selectBox.js?=2"></script>
+	<link type="text/css" rel="stylesheet" href="/js/jquery.selectBox.css" />
+	<script src="/js/Source/Locale.en-US.DatePicker.js?=2" type="text/javascript"></script>
+	<script src="/js/Source/Picker.js?=2" type="text/javascript"></script>
+	<script src="/js/Source/Picker.Attach.js?=2" type="text/javascript"></script>
+	<script src="/js/Source/Picker.Date.js?=2" type="text/javascript"></script>
+	<link  href="/js/Source/datepicker.css" rel="stylesheet" type="text/css" media="screen" />
+	<link  href="/js/Source/datepicker_dashboard/datepicker_dashboard.css" rel="stylesheet" type="text/css" media="screen" />
+	<!--script type="text/javascript" src="/js/contactus_sfolimo.js?=2"></script-->
+	<link rel='stylesheet' id='datepicjerstyle-css'  href='http://www.rideauction.com/wp-content/plugins/useredit/css/datepicker.css?ver=3.5.1' type='text/css' media='all' />
+	<link rel='stylesheet' id='jqueryuistyle-css'  href='http://www.rideauction.com/wp-content/themes/RideAuction2/styles/jquery-ui-1.8.20.custom.css?ver=3.5.1' type='text/css' media='all' />
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery.shadow.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery.corner.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery.scrollTo-min.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery-ui-1.8.18.custom.min.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.36.0-2013.06.16'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery.validate.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery.maskedinput-1.2.2.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery.countdown.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery.overscroll.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/indexExport.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/sliding.form.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='http://www.rideauction.com/wp-content/themes/RideAuction2/js/jquery.tools.min.js?ver=3.5.1'></script>
+	<script type="text/javascript" src="/js/napareserv2.js?ver=5"></script>
+    <style>
+    .napa-header .form-body{background:transparent;}
+    </style>
+</head>
+
+<body class="napa-site" onload="_googWcmGet('napa-phone', '18885920055')">
+<div style="display:none;">
+<? include_once "/home/myshofer/stat/cnt.php"; ?>
+</div>
+<div class="napa-logo-body">
+	<div class="napa-body-wrapper">
+		<div class="napa-phone-block">
+			<span class="napa-phone">888-592-0055</span>
+		</div>
+		<a href="/" id="logo-napa" class="napa2-logo"><img src="/images/logo.png" alt="MyShofer dot com" title="MyShofer dot com" /></a>
+	</div>
+</div>
+<div class="napa-header">
+
+	<div class="napa-header-row">
+		<div class="napa-header-cell" style="vertical-align: middle;">
+		
+			<div class="wrapper-napa" style="overflow:hidden;">
+				<div class="napa-form-carousel">
+					<div class="napa-form-carousele-item" id="napa-form-carousele-form"  style="vertical-align:top;">
+						<div class="form-body corner">
+							<form method="post" id="napa-form">
+								<input type="text" name="from" id="from_adress" class="corner" placeholder="Enter Pick Up" />
+								<input type="text" name="date" id="date" class="corner" placeholder="Enter Date" />
+								<div class="napa-select-box corner">
+									<select name="pickuphour" id="hour">
+										<?
+										for($i=1; $i<=12; $i++){
+											?>
+												<option value="<?=$i;?>" <? if ($i==12){ echo " selected"; } ?>><?=($i<10 ? '0'.$i : $i);?></option>
+											<?
+											}
+										?>
+									</select>
+									<select name="pickupminute" id="time">
+									<?
+										for($i=0; $i<=59; $i++){
+										?>
+											<option value="<?=$i;?>"><?=($i<10 ? '0'.$i : $i);?></option>
+										<?
+										}
+									?>
+									</select>
+									<select name="pickupampm" id="ampm">
+										<option value="am">AM</option>
+										<option value="pm">PM</option>
+									</select>
+								</div>
+								<input type="submit" name="send" class="corner napa-submit" id="napa-submit" value="Go" onClick="ga('send', 'pageview', '/step_1'), ga('send', 'event', 'napa_form', 'napa_step_1');" />
+							</form>
+						</div>
+					</div>
+					<div class="napa-form-carousele-item" id="napa-form-carousele-to" style="height:280px">
+                        <form method="post" id="napa-form-to" style="width: 1000px; margin:0 auto;">
+                            <div class="form-body corner">
+								<input type="text" value="" class="corner" style="display:block; width:980px;  box-sizing: border-box;margin-right:0 !important;" name="to" id="to" placeholder="Enter TO destination for one way trip" />
+                            </div>
+                            <div class="form-body corner" style="margin-top:10px;background:#f5f5f5">
+                            OR
+                            </div>
+                            <div class="form-body corner" style="margin-top:10px;">
+                                <div class="napa-select-box hour-box corner">
+                                     <select id="horsttransfer" class="corner" style="display:block; width:930px !important; box-sizing: border-box;color:#a9a9bb">
+                                        <option value="0">Enter number of Hours if you need Hourly as Directed Service</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-body corner" style="margin-top:10px; background:transparent;">
+                                <input type="submit" name="send" class="corner napa-submit" id="napa-to-submit" value="Price Check" onClick="ga('send', 'pageview', '/step_2'), ga('send', 'event', 'napa_form', 'napa_step_2');">
+                          
+                            </div>
+                        </form>
+					</div>
+					<div class="napa-form-carousele-item" id="napa-form-carousele-extras"  style="vertical-align:top;">
+						<div class="form-body corner" style="display:inline-block;">
+							<form method="post" id="napa-form-fin">
+								<div class="napa-select-box settings-box corner">
+									<span id="gatemeetblock"><input type="checkbox" id="gatemeet">Gate Meet&nbsp;</span><span id="carsearblock"><input type="checkbox" id="carseat">Car Seat</span>
+								</div>
+								<div class="napa-select-box stop-box corner">
+									<select id="noofstops">
+										<option value="0">No Of stops</option>
+										<?
+											for($i=1; $i<=10; $i++){
+												?>
+													<option value="<?=$i;?>"><?=$i;?></option>
+												<?
+												}
+											?>
+									</select>
+								</div>
+								<input type="text" id="flight-num" class="corner flight-box" placeholder="Flight Number"/>
+								<input type="submit" name="send" class="corner napa-submit" id="napa-finish-submit" value="Finish" onClick="ga('send', 'pageview', '/step_3'), ga('send', 'event', 'napa_form', 'napa_step_3');">
+							</div>
+						</form>
+					</div>
+					<div class="napa-form-carousele-item" id="napa-form-carousele-price"  style="vertical-align:top;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="content" class="napa-body-wrapper">
+	<h1>our benefits</h1>
+	<hr>
+	<div class="benefits-block">
+		<div class="benefits-item">
+			<div class="benefits-item-image"><img src="/images/benefits_2.png" alt="MyShofer dot com " /></div>
+			<div class="benefits-item-title">all type of rides</div>
+			<div class="benefits-item-body">We offer Napa Wine tours in all type of rides: Black Priuses, Towncars, SUVs, Stretch and Exotic Limousines.</div>
+		</div>
+		<div class="benefits-item benetfit-center">
+			<div class="benefits-item-image"><img src="/images/benefits_1.png" alt="MyShofer dot com " /></div>
+			<div class="benefits-item-title">professional drivers</div>
+			<div class="benefits-item-body">Our professional drivers who have at least 7+ years of experience driving folks to different wineries, giving tours in different cities.</div>
+		</div>
+		<div class="benefits-item">
+			<div class="benefits-item-image"><img src="/images/benefits_3.png" alt="MyShofer dot com " /></div>
+			<div class="benefits-item-title">flawless reputation</div>
+			<div class="benefits-item-body">MyShofer built a flawless reputation of one of the top Limo and Car Service companies and Bay Area.</div>
+		</div>
+	</div>
+</div>
+<div class="napa-text-item first-napa-text-item">
+	<div class="napa-text-left"><img src="/images/img_1.jpg" alt="MyShofer dot com " /></div>
+	<div class="napa-text-right napa-text-have-text">
+		<div class="napa-text-title">Napa Sonoma Tours, Airport<br />Transport, As Directed</div>
+		<div class="napa-text-item-text">
+			<p>Napa and Sonoma, one of the most romantic and beautiful places on planet earth. A paradise where one can find harmony with nature and appreciate amazing architectures of past and modern design of present. Furthermore Napa/Sonoma is a home of over 800 wineries, many of which are considered the best of its kind; a lot of people travel to Napa and Sonoma to enjoy sophisticated hotels, spas and amazing Michelin star restaurants located in this area.</p>
+			<p>So, how do people get to Napa and Sonoma? There are certainly many options from any hotel, residence or Airport; one can take a bus, shuttle, rent a car or, in our opinion the most comfortable and effective choice is to take a car service, where folks can combine transportation to a destination in Napa as well as possibility to take Napa Wine Tour before getting to the final destination. If you are just taking a tour through Napa Wineries and not staying in Napa, then a professional Car Service/Limo company is the only option that will allow you to see and enjoy the most.</p>
+		</div>
+	</div>
+</div>
+<div class="napa-text-item">
+	<div class="napa-text-left napa-text-have-text">
+		<div class="napa-text-title">Napa Sonoma Tours, Airport<br />Transport, As Directed</div>
+		<div class="napa-text-item-text ">
+			<p>MyShofer is San Francisco Limousine company providing Black Car Service, Limo Rides for Transfers to Airports (SFO, OAK, Sonoma, Hayward), Tours to Napa and Sonoma , city tours, transfers between cities in Bay Area, Limos for Wedding, Prom Nights, Funerals and for any other occasions when people need transportation. MyShofer has been in business since 2010 and in such a short time built a flawless reputation of one of the top Limo and Car Service companies and Bay Area.</p>
+			<p>With offices in San Francisco and Marin County, Napa and Sonoma Limo Tours, and Napa and Sonoma Transfers FROM/TO Airport, is certainly a major part of operational business for Myshofer and its drivers. We have many options available to our clients for Napa and Sonoma Tours such as: Black Car Transfer to Napa and Sonoma from any city or airport in Bay Area, Limousine tours offered by our professional drivers who have at least 7+ years of experience driving folks to different wineries, giving tours in different cities, and certainly suggesting the best of the breed (i.e. which wineries are “must see”, which restaurants to go to and how to catch up with the most attractions in the shortest period of time). We offer Napa Wine tours in all type of rides: Black Priuses, Towncars, SUVs , Stretch and Exotic Limousines. You can check the price on this site or on our mobile and iPhone application.</p>
+		</div>
+	</div>
+	<div class="napa-text-right"><img src="/images/img_2.jpg" alt="MyShofer dot com "  /></div>
+</div>
+<div class="napa-contact-us">
+	<div class="napa-countact-us-bg">
+		<h1>contact us</h1> 
+		<hr>
+		<div class="napa-contact-us-form">
+			<form method="post" id="napa-contact-form-form" onsubmit="ga('send', 'event', 'msg', 'msg_ok')">
+				<div class="napa-form-item">
+					<input type="text" name="" class="corner napa-form-input napa-form-input-50 napa-form-one-element" placeholder="Your Full Name" /><input type="text" name="" class="corner napa-form-input napa-form-input-50" placeholder="Your Phone #" />
+				</div>
+				<div class="napa-form-item">
+					<input type="text" name="" class="corner  napa-form-input napa-form-input-100" placeholder="Your Mail" />
+				</div>
+				<div class="napa-form-item">
+					<textarea class="corner napa-form-textarea napa-form-input-100" placeholder="Message"></textarea>
+				</div>
+				<div class="napa-form-item form-right">
+					<input type="submit" class="napa-form-submit corner" value="Send" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+	<div id="footer" class="wrapper" style="width:1170px;background:#fff;padding:50px 0">
+		<div id="footer_right">
+			<a href="" rel="nofollow" target="_blank" id="google" class="soclinks ie6transparent"></a>
+			<a href="http://twitter.com/#!/myshofer" rel="nofollow" target="_blank" id="twitter" class="soclinks ie6transparent"></a>
+			<a href="http://www.facebook.com/MyShoferDotCom" rel="nofollow" target="_blank" id="facebook" class="soclinks ie6transparent"></a>
+			
+			<!--a href="http://www.flysfo.com/web/page/airline/" target="_blank" rel="nofollow">SFO Airlines & Flight Status Information</a-->
+			<script type="text/javascript">
+																							!function(doc, id){
+			  var js;
+			  var scriptElement = doc.getElementsByTagName("script")[0];
+			  if (!doc.getElementById(id)) {
+				js = doc.createElement("script");
+				js.id = id;
+				js.src = "//dyn.yelpcdn.com/biz_badge_js/rrc/A4J7K3HuFU8emCElTN1wPw.js";
+				scriptElement.parentNode.insertBefore(js, scriptElement);
+			  }
+			} (document, "yelp-biz-badge-script-rrc-A4J7K3HuFU8emCElTN1wPw");
+			</script>
+		</div>
+		<div id="footer_left">
+			<strong>Customer Support</strong> 888-592-0055<br />
+			Copyright <?=date('Y');?> My Shofer Dot Com.
+			<div id="promograph">
+			In Parthership with <a href="http://promograph.ru">Promograph</a>
+			</div>
+			
+		</div>
+		<div id="yelp-biz-badge-rrc-A4J7K3HuFU8emCElTN1wPw" style="width:125px; margin:0 auto;">MyShofer</div>
+	</div>
+</body>
+</html> 
