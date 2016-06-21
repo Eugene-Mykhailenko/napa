@@ -5,12 +5,18 @@
 }
 //
 
+.wrapper-napa {
+	width: 100vw;
+}
 .napa-body-wrapper {
 	width: 100%;
 }
-
+.napa-form-carousel {
+	width: 100vw;
+	white-space: nowrap;
+}
 .napa-form-carousele-item {
-
+	width: 100vw;
 }
 
 
@@ -33,8 +39,120 @@
 
 //mobile devices
 @media (max-width: 767px) {
+	.napa-logo-body {
+		padding: 0 20px;
+		.napa-body-wrapper {
+			.napa-phone-block {
+				float: left;
+			}
+			.napa2-logo {
+				display: block;
+			}
+		}
+	}
 
 
+
+
+	.napa-header .form-body input {
+		display: block;
+		width: 100% !important;
+		margin-bottom: 20px;
+	}
+	.napa-select-box {
+		margin-bottom: 20px;
+	}
+
+	.napa-form-carousele-item {
+		form {
+			width: 100% !important;
+		}
+	}
+
+
+	.napa-header .form-body {
+		display: block;
+	}
+
+
+	#napa-form-carousele-to {
+		form {
+			.form-body {
+				&:nth-child(2) {
+					width: 50px;
+					margin: auto;
+				}
+				.napa-select-box {
+					width: calc(100% - 47px);
+					select {
+						max-width: 100%;
+						white-space: normal;
+						font-size: 14px;
+					}
+				}
+			}
+
+		}
+	}
+	#napa-form-carousele-extras {
+		form {
+			white-space: normal;
+			.napa-select-box {
+				width: calc(100% - 47px);
+			}
+		}
+		.napa-result-wrapper {
+			width: 100%;
+			margin: 0;
+			.napa-result-item {
+				width: 100%;
+				margin: 0 !important;
+			}
+		}
+		.napa-site .ajax_card {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+	}
+
+
+
+
+	.benefits-item {
+		display: block;
+		width: 90%;
+		max-width: 400px;
+		margin: auto;
+	}
+
+	.napa-text-left,
+	.napa-text-right {
+		display: block;
+		width: 100%;
+		img {
+			display: block;
+		}
+	}
+	.napa-text-have-text {
+		padding: 20px;
+	}
+	.napa-contact-us-form {
+		width: 90%;
+		max-width: 400px;
+		.napa-form-item {
+			margin-bottom: 0;
+		}
+		.napa-form-input, .napa-form-textarea {
+			margin-bottom: 20px;
+		}
+	}
+	.napa-form-input-50 {
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.napa-form-input-100 {
+		width: 100% !important;
+	}
 }
 
 
