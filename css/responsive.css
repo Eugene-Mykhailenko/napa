@@ -14,6 +14,83 @@
 .napa-form-carousele-item {
   width: 100vw; }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .napa-logo-body {
+    padding: 0 20px; }
+    .napa-logo-body .napa-body-wrapper .napa-phone-block {
+      float: left; }
+    .napa-logo-body .napa-body-wrapper .napa2-logo {
+      display: block; }
+
+  .napa-header .form-body input {
+    display: block;
+    width: 100% !important;
+    margin-bottom: 20px; }
+
+  .napa-select-box {
+    margin-bottom: 20px; }
+
+  .napa-form-carousele-item form {
+    width: 100% !important; }
+
+  .napa-header .form-body {
+    display: block; }
+
+  #napa-form-carousele-to form .form-body:nth-child(2) {
+    width: 50px;
+    margin: auto; }
+  #napa-form-carousele-to form .form-body .napa-select-box {
+    width: calc(100% - 47px); }
+    #napa-form-carousele-to form .form-body .napa-select-box select {
+      max-width: 100%;
+      white-space: normal;
+      font-size: 14px; }
+
+  #napa-form-carousele-extras form {
+    white-space: normal; }
+    #napa-form-carousele-extras form .napa-select-box {
+      width: calc(100% - 47px); }
+  #napa-form-carousele-extras .napa-result-wrapper {
+    width: 100%;
+    margin: 0; }
+    #napa-form-carousele-extras .napa-result-wrapper .napa-result-item {
+      width: 100%;
+      margin: 0 !important; }
+  #napa-form-carousele-extras .napa-site .ajax_card {
+    margin-left: auto !important;
+    margin-right: auto !important; }
+
+  .benefits-item {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: auto; }
+
+  .napa-text-left,
+  .napa-text-right {
+    display: block;
+    width: 100%; }
+    .napa-text-left img,
+    .napa-text-right img {
+      display: block; }
+
+  .napa-text-have-text {
+    padding: 20px; }
+
+  .napa-contact-us-form {
+    width: 90%;
+    max-width: 400px; }
+    .napa-contact-us-form .napa-form-item {
+      margin-bottom: 0; }
+    .napa-contact-us-form .napa-form-input, .napa-contact-us-form .napa-form-textarea {
+      margin-bottom: 20px; }
+
+  .napa-form-input-50 {
+    width: 100%;
+    margin: 0 0 20px 0; }
+
+  .napa-form-input-100 {
+    width: 100% !important; } }
 @media (max-width: 767px) {
   .napa-logo-body {
     padding: 0 20px; }
