@@ -1,6 +1,15 @@
 .napa-header {
   background: url("http://www.napa.myshofer.com/images/napabg.jpg") no-repeat center top; }
 
+#google {
+  background: url(http://www.napa.myshofer.com/images/soc/google-g-logo.png) no-repeat; }
+
+#twitter {
+  background: url(http://www.napa.myshofer.com/images/soc/twitter-bird2.png) no-repeat; }
+
+#facebook {
+  background: url(http://www.napa.myshofer.com/images/soc/facebook-logo.png) no-repeat; }
+
 .wrapper-napa {
   width: 100vw; }
 
@@ -14,18 +23,27 @@
 .napa-form-carousele-item {
   width: 100vw; }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .napa-logo-body {
-    padding: 0 20px; }
-    .napa-logo-body .napa-body-wrapper .napa-phone-block {
-      float: left; }
-    .napa-logo-body .napa-body-wrapper .napa2-logo {
-      display: block; }
+.napa-logo-body {
+  width: auto;
+  padding: 0 20px; }
 
+.napa-body-wrapper {
+  width: auto !important;
+  max-width: 1170px; }
+
+#footer {
+  width: calc(100vw - 40px) !important;
+  max-width: 1170px;
+  padding: 50px 20px !important; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .napa-header .form-body input {
     display: block;
     width: 100% !important;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto !important; }
 
   .napa-select-box {
     margin-bottom: 20px; }
@@ -36,15 +54,18 @@
   .napa-header .form-body {
     display: block; }
 
-  #napa-form-carousele-to form .form-body:nth-child(2) {
-    width: 50px;
-    margin: auto; }
-  #napa-form-carousele-to form .form-body .napa-select-box {
-    width: calc(100% - 47px); }
-    #napa-form-carousele-to form .form-body .napa-select-box select {
-      max-width: 100%;
-      white-space: normal;
-      font-size: 14px; }
+  #napa-form-carousele-to form .form-body {
+    max-width: 400px !important;
+    margin: auto !important; }
+    #napa-form-carousele-to form .form-body:nth-child(2) {
+      width: 50px;
+      margin: auto; }
+    #napa-form-carousele-to form .form-body .napa-select-box {
+      width: calc(100% - 47px); }
+      #napa-form-carousele-to form .form-body .napa-select-box select {
+        max-width: 100%;
+        white-space: normal;
+        font-size: 14px; }
 
   #napa-form-carousele-extras form {
     white-space: normal; }
@@ -167,6 +188,15 @@
     margin: 0 0 20px 0; }
 
   .napa-form-input-100 {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  #footer {
+    text-align: center; }
+    #footer .soclinks {
+      float: none;
+      display: inline-block; }
+    #footer > div {
+      float: none;
+      margin: 0 auto 20px; } }
 
 /*# sourceMappingURL=responsive.css.map */
