@@ -1,15 +1,3 @@
-.napa-header {
-  background: url("http://www.napa.myshofer.com/images/napabg.jpg") no-repeat center top; }
-
-#google {
-  background: url(http://www.napa.myshofer.com/images/soc/google-g-logo.png) no-repeat; }
-
-#twitter {
-  background: url(http://www.napa.myshofer.com/images/soc/twitter-bird2.png) no-repeat; }
-
-#facebook {
-  background: url(http://www.napa.myshofer.com/images/soc/facebook-logo.png) no-repeat; }
-
 .wrapper-napa {
   width: 100vw; }
 
@@ -17,7 +5,7 @@
   width: 100%; }
 
 .napa-form-carousel {
-  width: 100vw;
+  width: 400vw;
   white-space: nowrap; }
 
 .napa-form-carousele-item {

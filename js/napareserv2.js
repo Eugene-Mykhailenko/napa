@@ -87,24 +87,24 @@ window.addEvent('domready', function() {
 						});
 						
 						$$('.napa-form-carousel').setStyles({
-							'-webkit-transform':'translate(-1200px,0)',
-							'-moz-transform':'translate(-1200px,0)',
-							'-o-transform':'translate(-1200px,0)',
-							'-ms-transform':'translate(-1200px,0)',
-							'transform':'translate(-1200px,0)'
+							'-webkit-transform':'translate(-100vw,0)',
+							'-moz-transform':'translate(-100vw,0)',
+							'-o-transform':'translate(-100vw,0)',
+							'-ms-transform':'translate(-100vw,0)',
+							'transform':'translate(-100vw,0)'
 						});
 						
 						
 					}
 					else{
 						$('napa-form-carousele-to').setStyle('display', 'none');
-						$$('.napa-form-carousel').setStyle('width', '3650px');
+						$$('.napa-form-carousel').setStyle('width', '300vw');
 						$$('.napa-form-carousel').setStyles({
-							'-webkit-transform':'translate(-1200px,0)',
-							'-moz-transform':'translate(-1200px,0)',
-							'-o-transform':'translate(-1200px,0)',
-							'-ms-transform':'translate(-1200px,0)',
-							'transform':'translate(-1200px,0)'
+							'-webkit-transform':'translate(-100vw,0)',
+							'-moz-transform':'translate(-100vw,0)',
+							'-o-transform':'translate(-100vw,0)',
+							'-ms-transform':'translate(-100vw,0)',
+							'transform':'translate(-100vw,0)'
 						});
 						if (isAirport==0){
 							$('flight-num').setStyle('display', 'none');
@@ -135,11 +135,11 @@ window.addEvent('domready', function() {
         }
         else{
             $$('.napa-form-carousel').setStyles({
-			'-webkit-transform':'translate(-2400px,0)',
-			'-moz-transform':'translate(-2400px,0)',
-			'-o-transform':'translate(-2400px,0)',
-			'-ms-transform':'translate(-2400px,0)',
-			'transform':'translate(-2400px,0)'
+			'-webkit-transform':'translate(-200vw,0)',
+			'-moz-transform':'translate(-200vw,0)',
+			'-o-transform':'translate(-200vw,0)',
+			'-ms-transform':'translate(-200vw,0)',
+			'transform':'translate(-200vw,0)'
 		});
         }
 		return false;
@@ -281,20 +281,20 @@ window.addEvent('domready', function() {
 				time = this.get('value');
 				changePrice(this.get('value'));
 			});
-			if ($$('.napa-form-carousel').getStyle('width')=='3650px' || thisTime!=0){
-				var translate = -2400;
+			if ($$('.napa-form-carousel').getStyle('width')=='300vw' || thisTime!=0){
+				var translate = -200;
 			}
 			else{
-				var translate = -3600;
+				var translate = -300;
 			}
 			
 			
 			$$('.napa-form-carousel').setStyles({
-				'-webkit-transform':'translate('+translate+'px,0)',
-				'-moz-transform':'translate('+translate+'px,0)',
-				'-o-transform':'translate('+translate+'px,0)',
-				'-ms-transform':'translate('+translate+'px,0)',
-				'transform':'translate('+translate+'px,0)'
+				'-webkit-transform':'translate('+translate+'vw,0)',
+				'-moz-transform':'translate('+translate+'vw,0)',
+				'-o-transform':'translate('+translate+'vw,0)',
+				'-ms-transform':'translate('+translate+'vw,0)',
+				'transform':'translate('+translate+'vw,0)'
 			});
 		}}).get();
 		return false;
