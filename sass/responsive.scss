@@ -29,6 +29,10 @@
 }
 .napa-form-carousele-item {
 	width: 100vw;
+	form {
+		white-space: normal;
+		max-width: 1170px;
+	}
 }
 .napa-logo-body {
 	width: auto;
