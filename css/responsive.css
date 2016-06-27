@@ -9,11 +9,10 @@
   white-space: nowrap; }
 
 .napa-form-carousele-item {
-  width: 100vw;
-  form {
-
-  }
-}
+  width: 100vw; }
+  .napa-form-carousele-item form {
+    white-space: normal;
+    max-width: 1170px; }
 
 .napa-logo-body {
   width: auto;
