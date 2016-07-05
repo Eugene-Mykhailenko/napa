@@ -1,20 +1,4 @@
 ﻿
-//remove
-//.napa-header {
-//	background: url('http://www.napa.myshofer.com/images/napabg.jpg') no-repeat center top;
-//}
-//
-//#google {
-//	background: url(http://www.napa.myshofer.com/images/soc/google-g-logo.png) no-repeat;
-//}
-//#twitter {
-//	background: url(http://www.napa.myshofer.com/images/soc/twitter-bird2.png) no-repeat;
-//}
-//#facebook {
-//	background: url(http://www.napa.myshofer.com/images/soc/facebook-logo.png) no-repeat;
-//}
-//
-////
 
 .wrapper-napa {
 	width: 100vw;
@@ -48,7 +32,30 @@
 	padding: 50px 20px !important;
 }
 
+.napa-header .form-body input[type='checkbox'] {
+	width: auto !important;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	left: -5px;
+	top: -3px;
+	margin: 0 5px;
+}
 
+#napa-form-carousele-price {
+	.napa-result-div {
+		margin: auto;
+	}
+	.napa-result-item {
+		display: block;
+		width: calc(50% - 20px);
+		margin: 0 10px !important;
+		.ajax_card {
+			width: calc(50% - 22px);
+			margin: 0 10px 20px !important;
+		}
+	}
+}
 
 @media (max-width: 1024px) {
 
@@ -56,7 +63,24 @@
 }
 
 @media (max-width: 992px) {
+	#napa-form-carousele-price {
+		.napa-result-item {
+			width: calc(100% - 20px);
+			margin:10px !important;
+		}
+	}
 
+}
+
+@media (max-width: 500px) {
+	#napa-form-carousele-price {
+		.napa-result-item {
+			margin:10px !important;
+			.ajax_card {
+				width: calc(100% - 22px);
+			}
+		}
+	}
 }
 
 //tablets
