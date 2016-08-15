@@ -39,17 +39,18 @@
 #napa-form-carousele-price .napa-result-div {
   margin: auto; }
 #napa-form-carousele-price .napa-result-item {
-  display: block;
+  display: inline-block;
   width: calc(50% - 20px);
-  margin: 0 10px !important; }
+  margin: 0 5px !important; }
   #napa-form-carousele-price .napa-result-item .ajax_card {
     width: calc(50% - 22px);
     margin: 0 10px 20px !important; }
 
 @media (max-width: 992px) {
   #napa-form-carousele-price .napa-result-item {
+    display: block;
     width: calc(100% - 20px);
-    margin: 10px !important; } }
+    margin: 5px !important; } }
 @media (max-width: 500px) {
   #napa-form-carousele-price .napa-result-item {
     margin: 10px !important; }
@@ -73,18 +74,20 @@
   .napa-header .form-body {
     display: block; }
 
-  #napa-form-carousele-to form .form-body {
-    max-width: 400px !important;
-    margin: auto !important; }
-    #napa-form-carousele-to form .form-body:nth-child(2) {
-      width: 50px;
-      margin: auto; }
-    #napa-form-carousele-to form .form-body .napa-select-box {
-      width: calc(100% - 47px); }
-      #napa-form-carousele-to form .form-body .napa-select-box select {
-        max-width: 100%;
-        white-space: normal;
-        font-size: 14px; }
+  #napa-form-carousele-to {
+    height: auto !important; }
+    #napa-form-carousele-to form .form-body {
+      max-width: 400px !important;
+      margin: auto !important; }
+      #napa-form-carousele-to form .form-body:nth-child(2) {
+        width: 50px;
+        margin: auto; }
+      #napa-form-carousele-to form .form-body .napa-select-box {
+        width: calc(100% - 47px); }
+        #napa-form-carousele-to form .form-body .napa-select-box select {
+          max-width: 100%;
+          white-space: normal;
+          font-size: 14px; }
 
   #napa-form-carousele-extras form {
     white-space: normal; }
@@ -153,15 +156,17 @@
   .napa-header .form-body {
     display: block; }
 
-  #napa-form-carousele-to form .form-body:nth-child(2) {
-    width: 50px;
-    margin: auto; }
-  #napa-form-carousele-to form .form-body .napa-select-box {
-    width: calc(100% - 47px); }
-    #napa-form-carousele-to form .form-body .napa-select-box select {
-      max-width: 100%;
-      white-space: normal;
-      font-size: 14px; }
+  #napa-form-carousele-to {
+    height: auto !important; }
+    #napa-form-carousele-to form .form-body:nth-child(2) {
+      width: 50px;
+      margin: auto; }
+    #napa-form-carousele-to form .form-body .napa-select-box {
+      width: calc(100% - 47px); }
+      #napa-form-carousele-to form .form-body .napa-select-box select {
+        max-width: 100%;
+        white-space: normal;
+        font-size: 14px; }
 
   #napa-form-carousele-extras form {
     white-space: normal; }

@@ -47,15 +47,16 @@
 		margin: auto;
 	}
 	.napa-result-item {
-		display: block;
+		display: inline-block;
 		width: calc(50% - 20px);
-		margin: 0 10px !important;
+		margin: 0 5px !important;
 		.ajax_card {
 			width: calc(50% - 22px);
 			margin: 0 10px 20px !important;
 		}
 	}
 }
+
 
 @media (max-width: 1024px) {
 
@@ -65,8 +66,9 @@
 @media (max-width: 992px) {
 	#napa-form-carousele-price {
 		.napa-result-item {
+			display: block;
 			width: calc(100% - 20px);
-			margin:10px !important;
+			margin:5px !important;
 		}
 	}
 
@@ -113,6 +115,7 @@
 	}
 
 	#napa-form-carousele-to {
+		height: auto !important;
 		form {
 			.form-body {
 				max-width: 400px !important;
@@ -235,6 +238,7 @@
 
 
 	#napa-form-carousele-to {
+		height: auto !important;
 		form {
 			.form-body {
 				&:nth-child(2) {
